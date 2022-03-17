@@ -4,8 +4,8 @@ const About = () => {
   return (
     <section className="section about-section">
       <h1 className="section-title">about</h1>
-      <p>
-        Boker tov olam, ma shlom kulam? ani yored me ha hutim.
+      <p className="section-text">
+        For your cocktail party, these are some of the best out there. search through them, explore and pick.
       </p>
     </section>
   )

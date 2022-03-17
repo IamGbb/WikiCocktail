@@ -37,19 +37,18 @@ const SingleCocktail = () => {
           const newCocktail = {
             name, image, info, category, glass, instructions, ingredients
           }
-          setCocktail=(newCocktail)
+          setCocktail(newCocktail)
+          } else {
+          setCocktail(null)
         }
-        else {
-          setCocktail(null);
-          setLoading(false);
-        }
-      } catch (error){
-        console.log(error);
-        setLoading(false)
-      };
+      } catch (error) {
+        console.log(error)
+      }
+      setLoading(false)
     }
-  },[id])
-  if(loading){
+    getCocktail()
+  }, [id])
+  if (loading) {  
     return <Loading />
   }
   if(!cocktail){
